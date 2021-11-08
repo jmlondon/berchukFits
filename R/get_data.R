@@ -1,5 +1,9 @@
-library(targets)
-tar_load(c("ribbon_model_data",
+#' get fit data from `berchukHaulout`
+#'
+#' @return boolean
+
+get_fit_data <- function() {
+targets::tar_load(c("ribbon_model_data",
            "ribbon_fit",
            "ribbon_noagesex_fit",
            "ribbon_year_fit",
@@ -11,9 +15,7 @@ tar_load(c("ribbon_model_data",
            "bearded_model_data"),
          store = "~/_projects/r/berchukHaulout/_targets")
 
-library(usethis)
-
-use_data(ribbon_model_data,
+usethis::use_data(ribbon_model_data,
          ribbon_fit,
          ribbon_noagesex_fit,
          ribbon_year_fit,
@@ -22,4 +24,7 @@ use_data(ribbon_model_data,
          spotted_noagesex_fit,
          spotted_year_fit,
          bearded_model_data,
-         bearded_fit)
+         bearded_fit,
+         overwrite = TRUE)
+return(TRUE)
+}
