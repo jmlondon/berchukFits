@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_data.R
 \name{get_fit_data}
 \alias{get_fit_data}
-\title{get fit data from \code{berchukHaulout}}
+\title{get fit data from \code{berchukseals-haulout} project}
 \usage{
 get_fit_data()
 }
@@ -10,5 +10,5 @@ get_fit_data()
 boolean
 }
 \description{
-get fit data from \code{berchukHaulout}
+get fit data from \code{berchukseals-haulout} project
 }

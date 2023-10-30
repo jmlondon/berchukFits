@@ -1,4 +1,4 @@
-#' get fit data from `berchukHaulout`
+#' get fit data from `berchukseals-haulout` project
 #'
 #' @return boolean
 
