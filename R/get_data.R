@@ -13,7 +13,7 @@ targets::tar_load(c("ribbon_model_data",
            "spotted_year_fit",
            "bearded_fit",
            "bearded_model_data"),
-         store = "~/_projects/r/berchukHaulout/_targets")
+         store = "~/_projects/r/berchukseals-haulout/_targets")
 
 usethis::use_data(ribbon_model_data,
          ribbon_fit,
